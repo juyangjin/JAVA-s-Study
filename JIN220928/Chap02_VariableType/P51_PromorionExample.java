@@ -1,4 +1,4 @@
-package JIN220928.P2variableType;
+package JIN220928.Chap02_VariableType;
 
 public class P51_PromorionExample {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package JIN220928.P2variableType;
+package JIN220928.Chap02_VariableType;
 
 import java.util.Scanner; //import로 Scanner 호출(미호출시 에러발생, Scanner 사용을 위해 필수)
 

@@ -1,4 +1,4 @@
-package JIN220928.P2variableType;
+package JIN220928.Chap02_VariableType;
 
 public class P49_BooleanExample {
 
