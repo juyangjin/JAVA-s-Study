@@ -1,6 +1,6 @@
 package JIN220930.Chap03_Operators;
 
-public class P88_CopareOperatorExample1 {
+public class P088_CopareOperatorExample1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

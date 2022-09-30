@@ -1,6 +1,6 @@
 package JIN220930.Chap03_Operators;
 
-public class P91_StringEqualsExample {
+public class P091_StringEqualsExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

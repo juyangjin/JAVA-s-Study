@@ -1,6 +1,6 @@
 package JIN220930.Chap03_Operators;
 
-public class P87_StringConctExample {
+public class P087_StringConctExample {
 	public static void main(String[] args) {
 		String str1 = "JDK" + 6.0;
 		String str2 = str1 + " 특징";
