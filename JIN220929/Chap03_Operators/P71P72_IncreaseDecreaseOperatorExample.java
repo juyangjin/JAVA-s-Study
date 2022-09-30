@@ -16,11 +16,23 @@ public class P71P72_IncreaseDecreaseOperatorExample {
 		System.out.println("-------------------");
 		y--;
 		--y;
-		System.out.println("y=" );
+		System.out.println("y=" + y);
+		
 		System.out.println("-------------------");
+		z = x++;
+		System.out.println("z=" + z);
+		System.out.println("x=" + x);
+		
 		System.out.println("-------------------");
+		z = ++x;
+		System.out.println("z=" + z);
+		System.out.println("x=" + x);
+		
 		System.out.println("-------------------");
-
+		z = ++x + y++;
+		System.out.println("z=" + z);
+		System.out.println("x=" + x);
+		System.out.println("y=" + y);
+		
 	}
-
 }
