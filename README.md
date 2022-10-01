@@ -1,2 +1,3 @@
 # JAVA-s-Study
-[This is JAVA] study (author YongKwon_Sin)
+신용권 저자의 '이것이 자바다'를 보고 공부하기
+코드에 있어서 부족한 부분이 있다고 느낄 땐 스스로 일부 수정하면서 자습 
