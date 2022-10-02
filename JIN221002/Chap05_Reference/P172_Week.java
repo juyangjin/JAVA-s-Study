@@ -1,0 +1,11 @@
+package JIN221002.Chap05_Reference;
+
+public enum P172_Week {
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDAY,
+	SUNDAY
+}
