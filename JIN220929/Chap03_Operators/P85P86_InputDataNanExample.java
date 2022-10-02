@@ -9,7 +9,8 @@ public class P85P86_InputDataNanExample {
 		Scanner Scan = new Scanner(System.in);
 		
 		System.out.println("값을 입력해주세요:");
-		String userInput = Scan.nextLine(); //사용자로부터 입력받은 값, 악의성 있는 사용자는 변환이 안되는 NaN을 입력할지도 모른다.
+		String userInput = Scan.nextLine(); //사용자로부터 입력받은 값, 
+											//악의성 있는 사용자는 변환이 안되는 NaN을 입력할지도 모른다.
 		double val = Double.valueOf(userInput); //입력받은 값을 double 형으로 변환
 		
 		double currentBalance = 10000.0;

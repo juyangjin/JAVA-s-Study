@@ -5,7 +5,7 @@ public class P75_BitReverseOperatorExample {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int v1 = 10;
-		int v2 = ~v1;
+		int v2 = ~v1; //~는 비트반전 연산자로, 피연산자가 0일때 1로, 1일때 0으로 반전해주어 새로운 결과값을 내게 한다.(2진수)
 		int v3 = ~v1 + 1;
 		System.out.println(toBinaryString(v1) + "(십진수" + v1 + ")");
 		System.out.println(toBinaryString(v2) + "(십진수" + v2 + ")");
@@ -13,7 +13,7 @@ public class P75_BitReverseOperatorExample {
 		System.out.println();
 		
 		int v4 = -10;
-		int v5 = ~v4;
+		int v5 = ~v4; 
 		int v6 = ~v4 + 1;
 		
 		System.out.println(toBinaryString(v4) + "(십진수" + v4 + ")");
