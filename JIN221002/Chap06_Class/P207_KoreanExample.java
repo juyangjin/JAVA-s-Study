@@ -1,4 +1,4 @@
-package JIN221002.Chap06_Class_205;
+package JIN221002.Chap06_Class;
 
 public class P207_KoreanExample {
 

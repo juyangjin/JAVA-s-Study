@@ -1,4 +1,4 @@
-package JIN221002.Chap06_Class_195;
+package JIN221002.Chap06_Class;
 
 public class P202_FieldIntiValueExample {
 
