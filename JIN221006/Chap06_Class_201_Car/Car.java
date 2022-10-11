@@ -54,27 +54,82 @@ public class Car {
 		
 	//---------------------------------------------
 	//p213
-	String company = "현대자동차"; //필드
-	String model;
-	String color;
-	int maxSpeed;
+//	String company = "현대자동차"; //필드
+//	String model;
+//	String color;
+//	int maxSpeed;
+//	
+//	Car() { //생성자1
+//		
+//	}
+//	
+//	Car(String model) { //생성자2
+//		this(model, "은색", 250); 
+//	}
+//	
+//	Car(String model, String color) { //생성자3
+//		this(model, color, 250);
+//	}
+//	
+//	Car(String model, String color, int maxSpeed) { 
+//		this.model = model; //실행된 생성자들을 다 불러오는 공통실행코드
+//		this.color = color;
+//		this.maxSpeed = maxSpeed;
+//	}
+	//---------------------------------------------
+//	//p223
+//	//필드
+//	int gas;
+//	
+//	//생성자
+//	
+//	//메소드
+//	//리턴값이 없는 메소드로 매개값을 받아서 gas 필드값을 변경
+//	void setGas(int gas) { 
+//		this.gas = gas;
+//	}
+//	
+//	boolean isLeftGas() {
+//		if(gas==0) {
+//			System.out.println("gas가 없습니다.");
+//			return false; //false를 리턴
+//		}
+//		System.out.println("gas가 없습니다.");
+//		return true; //true를 리턴
+//	}
+//	
+//	void run() {
+//		while(true) {
+//			if(gas > 0) {
+//				System.out.println("달립니다.(gas잔량:" + gas + ")");
+//				gas -= 1;
+//			} else {
+//				System.out.println("멈춥니다.(gas잔량:" + gas + ")");
+//				return; //메소드 실행 종료
+//			}
+//		}
+//	}
 	
-	Car() { //생성자1
-		
+	//p229 클래스 외부에서 메소드 호출
+	//필드
+	int speed;
+	
+	//생성자
+	
+	//메소드
+	
+	int getSpeed() {
+		return speed;
 	}
 	
-	Car(String model) { //생성자2
-		this(model, "은색", 250); 
-	}
+	void keyTurnOn() {
+		System.out.println("키를 돌립니다.");
+		}
 	
-	Car(String model, String color) { //생성자3
-		this(model, color, 250);
+	void run() {
+		for(int i=10; i<=50; i+=10) {
+			speed = i;
+			System.out.println("달립니다.(시속:" + speed + "km/h)");
+		}
 	}
-	
-	Car(String model, String color, int maxSpeed) { 
-		this.model = model; //실행된 생성자들을 다 불러오는 공통실행코드
-		this.color = color;
-		this.maxSpeed = maxSpeed;
-	}
-	
 }

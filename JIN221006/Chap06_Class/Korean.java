@@ -1,4 +1,4 @@
-package JIN221002.Chap06_Class;
+package JIN221006.Chap06_Class;
 
 public class Korean {
 	//필드

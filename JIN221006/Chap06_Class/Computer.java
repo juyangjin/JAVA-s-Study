@@ -1,4 +1,4 @@
-package JIN221002.Chap06_Class;
+package JIN221006.Chap06_Class;
 
 public class Computer {
 	int sum1(int[] values) {
