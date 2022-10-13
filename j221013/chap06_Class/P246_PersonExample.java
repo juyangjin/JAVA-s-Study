@@ -1,7 +1,7 @@
 package j221013.chap06_Class;
 
-public class PersonExample {
-
+public class P246_PersonExample {
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Person p1 = new Person("123456-123457","계백");
