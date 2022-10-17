@@ -1,6 +1,6 @@
-package j221006.chap06_Class_201_Car;
+package j221006.chap06_Class_201_268_Car;
 
-//P201부터 214까지 이어진 CarExample 수정파일, 뒤로 갈 수록 효율이 높아지는 느낌.
+//P201부터 쭉 이어진 CarExample 수정파일, 뒤로 갈 수록 효율이 높아지는 느낌.
 public class CarExample {
 	public static void main(String[] args) {
 		
@@ -98,12 +98,30 @@ public class CarExample {
 //		myCar.run();
 //		int speed = myCar.getSpeed();
 //		System.out.println("현재 속도:" + speed + "km/h");
-		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-		//p235 인스턴스 넘버와 this
-		Car myCar = new Car("포르쉐");
-		Car yourCar = new Car("벤츠");
+//		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+//		//p235 인스턴스 넘버와 this
+//		Car myCar = new Car("포르쉐");
+//		Car yourCar = new Car("벤츠");
+//		
+//		myCar.run();
+//		yourCar.run();
 		
-		myCar.run();
-		yourCar.run();
+		//p268 Getter와 Setter 메소드 사용 
+		//저자는 잘못된 속도변경을 먼저 작성하였으나, 나는 조금 변경하여 올바른 속도변경을 먼저 설정해서 출력을 다르게 해보았다.
+		Car myCar = new Car();
+		
+		//올바른 속도변경
+		myCar.setSpeed(60); //Car의 setter 메소드로 해당 값이 이동하여 매개값 검사, setter와 getter의 리턴값이 된다.
+		
+		System.out.println("현재 속도: " + myCar.getSpeed());
+		//잘못된 속도 변경이 아닌, 올바른 속도 변경부터 작성하게 되면 출력값이 올바르게 나오게 된다.
+		
+		myCar.setSpeed(-50); //잘못된 속도변경으로 인해 setter와 getter의 리턴값이 0이 된다.
+		
+		//멈춤
+		if(!myCar.isStop()) {//위에 입력된 값으로 인해 myCar.isStop의 리턴값이 0이 되어 자동차를 멈추기 위해 실행됨)
+			myCar.setStop(true); //자동차가 멈춤
+		}
+		System.out.println("현재 속도: " + myCar.getSpeed()); //자동차가 멈췄으니 속도는 0이 된다. 
 	}
 }

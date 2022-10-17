@@ -1,6 +1,6 @@
-package j221006.chap06_Class_201_Car;
+package j221006.chap06_Class_201_268_Car;
 
-//P201부터 214까지 이어진 Car 수정파일
+//P201부터 쭉 이어진 Car 수정파일
 public class Car {
 	
 //	//P201 Car 클래스 필드 선언
@@ -132,26 +132,68 @@ public class Car {
 //			System.out.println("달립니다.(시속:" + speed + "km/h)");
 //		}
 //	}
+//	
+//	//p235 인스턴스 넘버와 this
+//	//필드
+//	String model;
+//	int speed;
+//	
+//	//생성자
+//	Car(String model){
+//		this.model = model;
+//	}
+//	
+//	//메소드
+//	void setSpeed(int speed) {
+//		this.speed = speed;
+//	}
+//	
+//	void run() {
+//		for(int i=10; i<=50; i+=10) {
+//			this.setSpeed(i);
+//			System.out.println(this.model + "가 달립니다.(시속:" + this.speed + "km/h)");
+//		}
+//	}
+//	
+//	//p242 정적 메소드 블록 선언 시 주의 점
+//	int speed;
+//	
+//	void run() {
+//		System.out.println(speed + "으로 달립니다.");
+//	}
+//	
+//	public static void main(String[] args) {
+//		Car myCar = new Car();
+//		myCar.speed = 60;
+//		myCar.run();
+//	}
 	
-	//p235 인스턴스 넘버와 this
+	//p267 Getter와 Setter 메소드 선언, 선언 후에는 alt+shft+s단축키 또는 상단바 Source에서 getter,setter 자동생성 가능
 	//필드
-	String model;
-	int speed;
-	
-	//생성자
-	Car(String model){
-		this.model = model;
-	}
+	private int speed;
+	private boolean stop;
 	
 	//메소드
-	void setSpeed(int speed) {
-		this.speed = speed;
+	public int getSpeed() {
+		return speed;
 	}
 	
-	void run() {
-		for(int i=10; i<=50; i+=10) {
-			this.setSpeed(i);
-			System.out.println(this.model + "가 달립니다.(시속:" + this.speed + "km/h)");
+	public void setSpeed(int speed) {
+		if(speed<0) { //CarExample에서 속도값을 음수로 변경하려고 하면 자동으로 스피드값을 0으로 설정되도록 if문 작성
+			this.speed = 0;
+			return;
+		} else {
+		this.speed = speed; //speed값이 양수일 때
 		}
 	}
+	
+	public boolean isStop() {
+		return stop;
+	}
+
+	public void setStop(boolean stop) {
+		this.stop = stop;
+		this.speed = 0;
+	}
+	
 }
