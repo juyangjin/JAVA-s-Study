@@ -1,4 +1,4 @@
-package j221031.chap07_Inheritance;
+package j221107.chap07_Inheritance;
 
 public class P297_ComputerExample {
 	public static void main(String[] args) {

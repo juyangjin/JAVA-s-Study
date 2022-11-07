@@ -1,4 +1,4 @@
-package j221027.chap07_Inheritance;
+package j221107.chap07_Inheritance;
 
 public class SupersonicAirplane extends Airplane {
 	public static final int NORMAL = 1;
@@ -12,7 +12,8 @@ public class SupersonicAirplane extends Airplane {
 			System.out.println("초음속비행합니다.");
 		} else {
 			//Airplane 객체의 fly() 메소드 호출
-			super.fly();
+			 super.fly();
 		}
 	}
+
 }

@@ -1,4 +1,4 @@
-package j221031.chap07_Inheritance;
+package j221107.chap07_Inheritance;
 
 public class P295_StudentExample {//자식객체이용
 

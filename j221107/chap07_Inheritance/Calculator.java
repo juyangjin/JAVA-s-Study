@@ -1,4 +1,4 @@
-package j221031.chap07_Inheritance;
+package j221107.chap07_Inheritance;
 
 public class Calculator { //부모클래스
 	double areaCircle(double r) {
