@@ -1,4 +1,4 @@
-package j221031.cahp08_Interface;
+package j221107.chap08_Interface;
 
 public class P357_SmartTelevision implements P355_RemoteControl,P356_Searchable {
 	private int volume;

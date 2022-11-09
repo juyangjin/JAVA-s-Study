@@ -1,4 +1,4 @@
-package j221031.cahp08_Interface;
+package j221107.chap08_Interface;
 
 public class P347_RemoteControl {
 	//상수
